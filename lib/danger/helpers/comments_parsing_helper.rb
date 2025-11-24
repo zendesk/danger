@@ -55,8 +55,8 @@ module Danger
 
       private
 
-      GITHUB_OLD_REGEX = %r{<th width="100%"(.*?)</th>}im.freeze
-      NEW_REGEX = %r{<th.*data-danger-table="true"(.*?)</th>}im.freeze
+      GITHUB_OLD_REGEX = %r{<th width="100%"(.*?)</th>}im
+      NEW_REGEX = %r{<th.*data-danger-table="true"(.*?)</th>}im
 
       def danger_table?(table)
         # The old GitHub specific method relied on

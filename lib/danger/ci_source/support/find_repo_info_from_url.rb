@@ -8,7 +8,7 @@ module Danger
       (?<slug>[^/]+(/[^/]+){0,2})
       (/(pull|pullrequest|merge_requests|pull-requests)/)
       (?<id>\d+)
-    }x.freeze
+    }x
 
     # Regex used to extract info from Bitbucket server URLs, as they use a quite different format
     REGEXPBB = %r{
@@ -17,7 +17,7 @@ module Danger
       /repos/([^/.]+)
       /pull-requests
       /(\d+)
-    }x.freeze
+    }x
 
     def initialize(url)
       @url = url

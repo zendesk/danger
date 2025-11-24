@@ -1,5 +1,3 @@
-require "set"
-
 module Danger
   # "abstract" CI class
   class CI

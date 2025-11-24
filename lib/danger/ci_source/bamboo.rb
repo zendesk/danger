@@ -1,5 +1,3 @@
-require "set"
-
 module Danger
   # ### CI Setup
   #
